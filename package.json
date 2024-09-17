@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-manzdev",
-  "version": "1.0.0-alpha",
+  "version": "1.0.1-alpha",
   "description": "Linter for JS vanilla projects",
   "main": "index.js",
   "type": "module",
@@ -15,7 +15,7 @@
   "peerDependencies": {
     "eslint": "9.10.0"
   },
-  "devDependencies": {
+  "dependencies": {
     "@html-eslint/eslint-plugin": "^0.27.0",
     "@html-eslint/parser": "^0.27.0",
     "@stylistic/eslint-plugin-js": "^2.8.0",
