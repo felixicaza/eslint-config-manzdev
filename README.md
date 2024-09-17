@@ -1,6 +1,6 @@
 # eslint-config-manzdev
 
-Paquete de reglas preconfiguradas para `eslint` (linter de Javascript).
+Paquete de reglas preconfiguradas para `eslint` (linter de Javascript). **Con soporte para ESLint 9**.
 
 Este paquete se utiliza internamente en `mkweb`, pero se ha separado por si alguien quiere utilizarlo de forma sencilla:
 https://manz.dev/software/mkweb
