@@ -82,8 +82,27 @@ export default {
     "wc/tag-name-matches-class": "error",
 
     ...regexp.configs["flat/recommended"].rules,
-    ...unicorn.configs["flat/recommended"].rules,
-    "unicorn/filename-case": "off",
-    "unicorn/no-empty-file": "warn"
+
+    "unicorn/prefer-query-selector": "error",
+    "unicorn/text-encoding-identifier-case": "error",
+    "unicorn/template-indent": "error",
+    "unicorn/switch-case-braces": "error",
+    "unicorn/prefer-ternary": "error",
+    "unicorn/prefer-switch": "error",
+    "unicorn/prefer-structured-clone": "error",
+    "unicorn/prefer-string-trim-start-end": "error",
+    "unicorn/prefer-string-starts-ends-with": "error",
+    "unicorn/prefer-string-replace-all": "error",
+    "unicorn/prefer-string-slice": "error",
+    "unicorn/prefer-spread": "error",
+    "unicorn/prefer-modern-dom-apis": "error",
+    "unicorn/prefer-includes": "error",
+    "unicorn/prefer-dom-node-text-content": "error",
+    "unicorn/prefer-dom-node-remove": "error",
+    "unicorn/prefer-array-flat-map": "error",
+    "unicorn/prefer-add-event-listener": "error",
+
+    "@stylistic/js/semi": "error",
+    "@stylistic/js/indent": ["error", 2]
   }
 };

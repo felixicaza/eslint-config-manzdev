@@ -1,11 +1,11 @@
-import filesConfig from "./configs/files.js";
-import jsonConfig from "./configs/json.js";
-import htmlConfig from "./configs/html.js";
-import jsConfig from "./configs/javascript.js";
+import files from "./configs/files.js";
+import json from "./configs/json.js";
+import html from "./configs/html.js";
+import javascript from "./configs/javascript.js";
 
 export default [
-  filesConfig,
-  jsonConfig,
-  htmlConfig,
-  jsConfig
+  files,
+  json,
+  html,
+  javascript
 ]
