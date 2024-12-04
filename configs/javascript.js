@@ -69,6 +69,7 @@ export default {
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "prefer-template": "error",
+    "template-curly-spacing": "error",
 
     // WebComponents
     "wc/define-tag-after-class-definition": "error",

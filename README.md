@@ -5,26 +5,6 @@ Paquete de reglas preconfiguradas para `eslint` (linter de Javascript). **Con so
 Este paquete se utiliza internamente en `mkweb`, pero se ha separado por si alguien quiere utilizarlo de forma sencilla:
 https://manz.dev/software/mkweb
 
-## Características destacables
-
-- ✨ Comillas dobles sobre comillas simples
-- ✨ Punto y coma siempre
-- ✨ Espacio antes de paréntesis de funciones (en arrow functions y anónimas)
-- ✨ No permitas `await` en bucles
-- ✨ No permitas `${var}` en comillas dobles. Convierte a backticks.
-- ✨ Añade las llaves a arrow functions cuando sea necesario
-- ✨ No permitas decimales sin el número `.5` en lugar de `0.5`
-- ✨ Máximo `500` lineas por fichero `.js`: Obliga a separar en módulos
-- ✨ Máximo `250` lineas por función: Obliga a modularizar funciones
-- ✨ No permitas ternarios innecesarios que pueden reescribirse de forma más simple
-- ✨ No permitas enlaces `javascript:*` (programación peligrosa)
-- ✨ No permitas secuencias de comandos separados por `,` (programación peligrosa)
-- ✨ No permitas uso de `var`: prefiere `let` o `const`
-- ✨ Convierte a `const` siempre que no reasignes la variable
-- ✨ Prefiere `...args` sobre `arguments`
-- ✨ Indentación: `2` espacios
-- ✨ Obliga a escribir el `.js` en los `import` con rutas relativas
-
 ## Instalación
 
 1. Instalar el linter y el paquete de configuración:
@@ -33,15 +13,18 @@ https://manz.dev/software/mkweb
 npm install -D eslint eslint-config-manzdev
 ```
 
-2. Crear un fichero de configuración `.eslintrc.json` que lo utilice:
+2. Crear un fichero de configuración `eslint.config.js` que lo utilice:
 
 ```js
-{
-  extends: "eslint-config-manzdev",
-  rules: {
-    /* ... */
+import manzdev from "eslint-config-manzdev";
+
+export default [
+  ...manzdev,
+  {
+    rules: {
+    }
   }
-}
+];
 ```
 
 Si lo deseas, puedes modificar reglas a tu criterio en el apartado `rules`.
