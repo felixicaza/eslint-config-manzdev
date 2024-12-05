@@ -10,7 +10,7 @@ https://manz.dev/software/mkweb
 1. Instalar el linter y el paquete de configuración:
 
 ```bash
-npm install -D eslint eslint-config-manzdev
+npm install -D eslint eslint-config-manzdev@1.0.5-alpha
 ```
 
 2. Crear un fichero de configuración `eslint.config.js` que lo utilice:
