@@ -4,6 +4,13 @@
   "description": "Linter for JS vanilla projects",
   "main": "index.js",
   "type": "module",
+  "bugs": {
+    "url": "https://github.com/ManzDev/eslint-config-manzdev/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ManzDev/eslint-config-manzdev.git"
+  },
   "scripts": {
     "test": "pnpm dlx eslint -c index.js"
   },
