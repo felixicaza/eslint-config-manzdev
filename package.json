@@ -4,6 +4,7 @@
   "description": "Linter for JS vanilla projects",
   "main": "index.js",
   "type": "module",
+  "homepage": "https://github.com/ManzDev/eslint-config-manzdev/",
   "bugs": {
     "url": "https://github.com/ManzDev/eslint-config-manzdev/issues"
   },
