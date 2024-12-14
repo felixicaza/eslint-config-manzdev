@@ -12,7 +12,7 @@ Soporte por defecto para:
 - ✅ Convenciones de nombres de ficheros y carpetas.
 - ✅ Orden de importación de ficheros y paquetes.
 - ✅ Reglas de estilo de código para HTML.
-- ✅ Reglas de estilo de código para JavaScript.
+- ✅ Reglas de estilo de código para JavaScript y Web Components.
 
 Opcional:
 
