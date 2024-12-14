@@ -2,6 +2,7 @@ import html from "@html-eslint/eslint-plugin";
 import htmlParser from "@html-eslint/parser";
 
 export default {
+  name: "manzdev/html",
   ...html.configs["flat/recommended"],
   files: ["**/*.html"],
   plugins: {
