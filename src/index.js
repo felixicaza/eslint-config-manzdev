@@ -2,8 +2,8 @@ import neostandard from "neostandard";
 
 // Configs
 import filesConfig from "./configs/files.js";
-import importsConfig from "./configs/imports.js";
 import htmlConfig from "./configs/html.js";
+import importsConfig from "./configs/imports.js";
 import javascriptConfig from "./configs/javascript.js";
 import jestConfig from "./configs/jest.js";
 import jsonConfig from "./configs/json.js";
@@ -27,7 +27,7 @@ import jsonConfig from "./configs/json.js";
  * @param {Options} options - Options to customize the ESLint configuration.
  * @returns {Array} ESLint configuration array.
  */
-export function manzdev(options = {}) {
+export function manzdev (options = {}) {
   const { files = {}, jest = false, json = false } = options;
 
   const configs = [
