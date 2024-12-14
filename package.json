@@ -12,7 +12,9 @@
     "url": "https://github.com/ManzDev/eslint-config-manzdev.git"
   },
   "scripts": {
-    "test": "pnpm dlx eslint -c index.js"
+    "test": "pnpm dlx eslint -c ./src/index.js",
+    "debug": "eslint --debug ./src/index.js",
+    "inspect": "eslint --inspect-config"
   },
   "keywords": [
     "eslint",
