@@ -1,5 +1,3 @@
-import config from "./index.js";
+import { manzdev } from "./src/index.js";
 
-export default [
-  ...config
-];
+export default manzdev();

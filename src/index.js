@@ -7,18 +7,20 @@ import javascript from "./configs/javascript.js";
 import jest from "./configs/jest.js";
 import json from "./configs/json.js";
 
-export default [
-  ...neostandard(),
-  {
-    rules: {
-      "@stylistic/quotes": ["error", "double"],
-      "@stylistic/semi": ["error", "always"]
-    }
-  },
-  files,
-  json,
-  html,
-  javascript,
-  imports,
-  jest
-];
+export function manzdev () {
+  return [
+    ...neostandard(),
+    {
+      rules: {
+        "@stylistic/quotes": ["error", "double"],
+        "@stylistic/semi": ["error", "always"],
+      },
+    },
+    files,
+    json,
+    html,
+    javascript,
+    imports,
+    jest,
+  ];
+}
