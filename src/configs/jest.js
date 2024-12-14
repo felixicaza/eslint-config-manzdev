@@ -3,6 +3,7 @@ import jest from "eslint-plugin-jest";
 const { globals } = jest.environments.globals;
 
 export default {
+  name: "manzdev/jest",
   files: ["**/*.spec.js", "**/*.test.js"],
   plugins: { jest },
   languageOptions: { globals },

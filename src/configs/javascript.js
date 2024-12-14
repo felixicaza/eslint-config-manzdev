@@ -5,6 +5,7 @@ import wc from "eslint-plugin-wc";
 import globals from "globals";
 
 export default {
+  name: "manzdev/javascript",
   ...unicorn.configs["flat/recommended"],
   ...promise.configs["flat/recommended"],
   ...wc.configs["flat/recommended"],
@@ -24,7 +25,6 @@ export default {
     }
   },
   plugins: {
-    //    jsdoc,
     promise,
     unicorn,
     regexp,

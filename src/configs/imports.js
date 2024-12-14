@@ -2,6 +2,7 @@ import sort from "eslint-plugin-simple-import-sort";
 import unused from "eslint-plugin-unused-imports";
 
 export default {
+  name: "manzdev/imports",
   plugins: {
     "unused-imports": unused,
     "simple-import-sort": sort
