@@ -2,7 +2,7 @@
   "name": "eslint-config-manzdev",
   "version": "1.0.5-alpha",
   "description": "Linter for JS vanilla projects",
-  "main": "index.js",
+  "main": "./src/index.js",
   "type": "module",
   "homepage": "https://github.com/ManzDev/eslint-config-manzdev/",
   "bugs": {
@@ -26,20 +26,28 @@
   "author": "ManzDev",
   "license": "ISC",
   "peerDependencies": {
-    "eslint": "^9.16.0"
+    "eslint": "^9.16.0",
+    "eslint-plugin-json": "^4.0.1",
+    "eslint-plugin-jest": "^28.9.0"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-json": {
+      "optional": true
+    },
+    "eslint-plugin-jest": {
+      "optional": true
+    }
   },
   "dependencies": {
     "@html-eslint/eslint-plugin": "^0.30.0",
     "@html-eslint/parser": "^0.30.0",
     "eslint-plugin-check-file": "^2.8.0",
-    "eslint-plugin-json": "^4.0.1",
     "eslint-plugin-promise": "^7.1.0",
     "eslint-plugin-regexp": "^2.6.0",
     "eslint-plugin-unicorn": "^56.0.1",
     "eslint-plugin-wc": "^2.1.1",
     "globals": "^15.9.0",
     "neostandard": "^0.11.9",
-    "eslint-plugin-jest": "^28.9.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-unused-imports": "^4.1.4"
   }
