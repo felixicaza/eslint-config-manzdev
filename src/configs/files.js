@@ -1,6 +1,6 @@
 import checkFile from "eslint-plugin-check-file";
 
-function filesConfig (config) {
+export default function filesConfig (config) {
   const { basePath = "src/**/*", rules } = config;
 
   return {
@@ -12,5 +12,3 @@ function filesConfig (config) {
     rules,
   };
 };
-
-export default filesConfig;
