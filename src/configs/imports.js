@@ -1,7 +1,8 @@
 import sort from "eslint-plugin-simple-import-sort";
 import unused from "eslint-plugin-unused-imports";
 
-export default {
+const importsConfig = {
+  name: "manzdev/imports",
   plugins: {
     "unused-imports": unused,
     "simple-import-sort": sort
@@ -14,3 +15,5 @@ export default {
     "simple-import-sort/exports": "error",
   }
 };
+
+export default importsConfig;
