@@ -30,7 +30,7 @@ npm install -D eslint eslint-config-manzdev@1.0.5-alpha
 2. Crea un fichero de configuración `eslint.config.js` y añade la configuración:
 
 ```js
-import { manzdev } from "./src/index.js";
+import { manzdev } from "eslint-config-manzdev";
 
 export default manzdev({
   files: {
@@ -56,7 +56,7 @@ export default manzdev({
 O si prefieres utilizar la configuración extendida:
 
 ```js
-import { manzdev } from "./src/index.js";
+import { manzdev } from "eslint-config-manzdev";
 
 export default [
   ...manzdev({
