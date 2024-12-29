@@ -26,7 +26,7 @@
   "author": "ManzDev",
   "license": "ISC",
   "peerDependencies": {
-    "eslint": "^9.16.0",
+    "eslint": "^9.17.0",
     "eslint-plugin-jest": "^28.10",
     "eslint-plugin-json": "^4.0.1"
   },
