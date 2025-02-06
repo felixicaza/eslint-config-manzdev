@@ -24,85 +24,52 @@ Opcional:
 1. Instala el linter y el paquete de configuración:
 
 ```bash
-npm install -D eslint eslint-config-manzdev@1.0.5-alpha
+npm install -D eslint eslint-config-manzdev@alpha
 ```
 
 2. Crea un fichero de configuración `eslint.config.js` y añade la configuración:
 
 ```js
-import { manzdev } from "eslint-config-manzdev";
-
-export default manzdev({
-  files: {
-    basePath: "src/**/*",
-    rules: {
-      "check-file/filename-naming-convention": ["error", {
-        "src/**/*.{html,css}": "KEBAB_CASE",
-        "src/**/*.{js,ts}": "CAMEL_CASE",
-        "src/{classes,components}/**/*.{js,ts}": "PASCAL_CASE",
-      }],
-      "check-file/folder-naming-convention": ["error", {
-        "src/**/": "CAMEL_CASE"
-      }],
-    },
-  },
-
-  // Opcional: Añadir reglas de estilo para Testing y JSON
-  jest: true,
-  json: true,
-});
-```
-
-O si prefieres utilizar la configuración extendida:
-
-```js
-import { manzdev } from "eslint-config-manzdev";
+import { recommended } from "eslint-config-manzdev";
 
 export default [
-  ...manzdev({
-    files: {
-      basePath: "src/**/*",
-      rules: {
-        "check-file/filename-naming-convention": ["error", {
-          "src/**/*.{html,css}": "KEBAB_CASE",
-          "src/**/*.{js,ts}": "CAMEL_CASE",
-          "src/{classes,components}/**/*.{js,ts}": "PASCAL_CASE",
-        }],
-        "check-file/folder-naming-convention": ["error", {
-          "src/**/": "CAMEL_CASE"
-        }],
-      },
-    },
-
-    // Opcional: Añadir reglas de estilo para Testing y JSON
-    jest: true,
-    json: true,
-  }),
-
-  // Tu configuración personalizada...
+  ...recommended,
+  {
+    rules: {
+      /* Tus reglas aquí */
+    }
+  }
 ];
+```
+
+Si prefieres una configuración más simple, puedes reemplazar `recommended` por `basic`. Recuerda que puedes añadir tus propias reglas en `rules` para sobreescribir las que no te gusten.
+
+También puedes ejecutar desde una terminal el siguiente comando para ver las reglas que se están aplicando:
+
+```bash
+$ npx @eslint/config-inspector
 ```
 
 ## Corrección automágica en VSCode
 
-Si quieres que Visual Code sea capaz de corregir los errores automáticamente, necesitarás lo siguiente:
+Si quieres que VisualCode sea capaz de corregir los errores automáticamente, necesitarás lo siguiente:
 
 1. Instala la extensión oficial de [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 2. Crea una carpeta `.vscode/` con un fichero `settings.json` en tu proyecto o pulsa <kbd>F1</kbd> / <kbd>Open User Settings (JSON)</kbd> e incluye la siguiente configuración recomendada:
 
 ```json
 {
-  /* Disable basic VSCode linters */
+  /* Desactiva los linters básicos de VSCode */
   "javascript.validate.enable": false,
   "typescript.validate.enable": false,
-  /* Activamos Stylelint */
+  /* Activamos el linter de Javascript */
   "eslint.enable": true,
   /* Corregir automágicamente */
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
   },
-   "[javascript]": {
+  "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   /* ... */
