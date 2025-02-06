@@ -13,11 +13,9 @@ Soporte por defecto para:
 - ✅ Orden de importación de ficheros y paquetes.
 - ✅ Reglas de estilo de código para HTML.
 - ✅ Reglas de estilo de código para JavaScript y Web Components.
-
-Opcional:
-
-- ✅ Reglas de estilo opcionales para Testing.
-- ✅ Reglas de estilo de código opcionales para JSON.
+- ✅ Reglas de estilo para JSON y YAML.
+- ✅ Reglas de estilo especiales para ficheros `package.json`.
+- ✅ Reglas de estilo para Testing (Jest).
 
 ## Instalación
 
