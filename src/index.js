@@ -1,3 +1,4 @@
+import astro from "./configs/astro.js";
 import files from "./configs/files.js";
 import imports from "./configs/imports.js";
 import javascript from "./configs/javascript.js";
@@ -9,6 +10,7 @@ import basic from "./flat/basic.js";
 import recommended from "./flat/recommended.js";
 
 export {
+  astro,
   basic,
   files,
   imports,
