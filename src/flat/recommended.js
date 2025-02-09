@@ -10,7 +10,9 @@ import packageJson from "../configs/packageJson.js";
 import yamlConfig from "../configs/yaml.js";
 
 export default [
-  ...neostandard(),
+  ...neostandard({
+    noJsx: true
+  }),
   {
     rules: {
       "@stylistic/quotes": ["error", "double"],
