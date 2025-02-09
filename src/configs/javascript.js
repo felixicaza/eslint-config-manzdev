@@ -139,5 +139,21 @@ export default {
     "unicorn/prefer-dom-node-remove": "warn",
     "unicorn/prefer-dom-node-text-content": "error",
     "unicorn/prefer-modern-dom-apis": "error",
+
+    "@stylistic/space-before-function-paren": [
+      "error",
+      {
+        anonymous: "always",
+        named: "never",
+        asyncArrow: "always"
+      }
+    ],
+    "@stylistic/comma-dangle": [
+      "error",
+      {
+        "error",
+        "only-multiline"
+      }
+    ]
   }
 };
