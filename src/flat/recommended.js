@@ -8,8 +8,10 @@ import jestConfig from "../configs/jest.js";
 import jsonConfig from "../configs/json.js";
 import packageJson from "../configs/packageJson.js";
 import yamlConfig from "../configs/yaml.js";
+import deMorgan from "eslint-plugin-de-morgan";
 
 export default [
+  deMorgan.configs.recommended,
   ...neostandard({
     noJsx: true
   }),
@@ -17,6 +19,15 @@ export default [
     rules: {
       "@stylistic/quotes": ["error", "double"],
       "@stylistic/semi": ["error", "always"],
+      "@stylistic/comma-dangle": "off",
+      "@stylistic/space-before-function-paren": [
+        "error",
+        {
+          anonymous: "always",
+          named: "never",
+          asyncArrow: "always"
+        }
+      ],
     },
   },
   importsConfig,

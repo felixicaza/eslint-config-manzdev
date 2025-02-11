@@ -1,7 +1,6 @@
 import promise from "eslint-plugin-promise";
 import regexp from "eslint-plugin-regexp";
 import unicorn from "eslint-plugin-unicorn";
-import deMorgan from "eslint-plugin-de-morgan";
 import wc from "eslint-plugin-wc";
 import globals from "globals";
 
@@ -9,7 +8,6 @@ export default {
   name: "manzdev/javascript",
   ...unicorn.configs["flat/recommended"],
   ...promise.configs["flat/recommended"],
-  ...deMorgan.configs["recommended"],
   ...wc.configs["flat/recommended"],
   ...wc.configs["flat/best-practice"],
   files: [
@@ -141,15 +139,5 @@ export default {
     "unicorn/prefer-dom-node-remove": "warn",
     "unicorn/prefer-dom-node-text-content": "error",
     "unicorn/prefer-modern-dom-apis": "error",
-
-    "@stylistic/space-before-function-paren": [
-      "error",
-      {
-        anonymous: "always",
-        named: "never",
-        asyncArrow: "always"
-      }
-    ],
-    "@stylistic/comma-dangle": "off"
   }
 };
