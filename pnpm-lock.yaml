@@ -29,6 +29,9 @@ importers:
       eslint-plugin-check-file:
         specifier: ^2.8.0
         version: 2.8.0(eslint@9.19.0)
+      eslint-plugin-de-morgan:
+        specifier: ^1.0.0
+        version: 1.0.0(eslint@9.19.0)
       eslint-plugin-jest:
         specifier: ^28.11.0
         version: 28.11.0(@typescript-eslint/eslint-plugin@8.23.0(@typescript-eslint/parser@8.23.0(eslint@9.19.0)(typescript@5.7.3))(eslint@9.19.0)(typescript@5.7.3))(eslint@9.19.0)(typescript@5.7.3)
@@ -621,6 +624,12 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       eslint: '>=7.28.0'
+
+  eslint-plugin-de-morgan@1.0.0:
+    resolution: {integrity: sha512-MpaG9bTiiu0kvOskZPKvKguynFFC81nyynnY3czHOZvfhvsWFgfRG6ufQmSlzlDbWIf6u7fuEHp4+1uUfWdrvg==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    peerDependencies:
+      eslint: '>=8.0.0'
 
   eslint-plugin-es-x@7.8.0:
     resolution: {integrity: sha512-7Ds8+wAAoV3T+LAKeu39Y5BzXCrGKrcISfgKEqTS4BDN8SFEDQd0S43jiQ8vIa3wUKD07qitZdfzlenSi8/0qQ==}
@@ -2450,6 +2459,10 @@ snapshots:
       eslint: 9.19.0
       is-glob: 4.0.3
       micromatch: 4.0.8
+
+  eslint-plugin-de-morgan@1.0.0(eslint@9.19.0):
+    dependencies:
+      eslint: 9.19.0
 
   eslint-plugin-es-x@7.8.0(eslint@9.19.0):
     dependencies:
